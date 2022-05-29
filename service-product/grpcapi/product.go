@@ -16,5 +16,6 @@ func (s *Server) GetProduct(ctx context.Context, productID *pb.ProductID) (*pb.P
 		ProductId: product.ID,
 		Name:      product.Name,
 		Stock:     int32(product.Stock),
+		Price:     float64(product.Price),
 	}, nil
 }

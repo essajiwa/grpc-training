@@ -5,6 +5,7 @@ For sharing session purposes only, this repo will evolve along with the training
 ## Prerequisite
 
 - Go version >= 1.16
+- Postgresql running on local machine or you can use [Docker](https://hub.docker.com/_/postgres/)
 - Install Protocol Buffer Compiler
   - Windows : <https://github.com/protocolbuffers/protobuf/releases/download/v3.20.0/protoc-3.20.0-win64.zip>
   - Linux (Debian Family, Ubuntu)  :  

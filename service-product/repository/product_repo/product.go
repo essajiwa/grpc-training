@@ -38,5 +38,6 @@ func (r *Repo) GetProductInfo(ctx context.Context, productID int64) (model.Produ
 		ID:    inv.GetProductId(),
 		Name:  "Microlax",
 		Stock: int(inv.Stock),
+		Price: 20000.00,
 	}, nil
 }
