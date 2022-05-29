@@ -26,6 +26,7 @@ Order Service --> Product Service --> Inventory Service
 ## How to Run
 - First, make sure the `.proto` files compiled whenever you change it, by running `make protoc` inside this root directory
 - Open 3 terminals, and on each of it `cd` to `service-inventory`, `service-order` and `service-product` directory
+- Change `DB_READ_URL` and `DB_WRITE_URL` on `Makefile` at `service-inventory` to your running local database
 - And then on each terminal run `make run` to run the gRPC server for each respective service
 - Try to hit the order gRPC, which will call the product and also the inventory service
 
