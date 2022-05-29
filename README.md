@@ -18,9 +18,9 @@ Update your PATH so that the protoc compiler can find the plugins:
 `export PATH="$PATH:$(go env GOPATH)/bin"`
 
 ## Sample Case
-We will create a simple scenario where there are 3 services in with following dependencies order  
+We will create a simple scenario where there are 3 services with following dependencies order  
 ```
-Order Service --> Product Service --> Inventory Service
+Order Service ---call--> Product Service ---call--> Inventory Service
 ```
 
 ## How to Run
