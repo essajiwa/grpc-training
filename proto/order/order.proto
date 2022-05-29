@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option go_package = "orderservice/order";
+
+package order;
+
+service Order {
+    rpc GetOrder (OrderID) returns (OrderResponse) {}
+    rpc GetOrderStream(OrderID) returns (stream OrderResponse){}
+}
+
+message Product {
+    int64 product_id = 1;
+    string name = 2;
+}
+
+message OrderID {
+    int64 value = 1;
+}
+
+message OrderResponse {
+    string invoice = 1;
+    repeated Product products = 2;
+    int64 id = 3;
+}
